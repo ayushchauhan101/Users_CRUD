@@ -1,5 +1,5 @@
 import axios from "axios";
-const PORT = process.env.PORT
+const PORT = 8000
 
 const baseUrl = `http://localhost:${PORT}/users`
 

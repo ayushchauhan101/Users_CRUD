@@ -6,7 +6,9 @@ function Users(){
     const [users, setUsers] = useState([])
 
     useEffect(() => {
-        usersService.getAll(response => setUsers(response))
+        usersService
+            .getAll()
+            .then(response => setUsers(response))
     }, [])
 
     function capitalize(string) {
